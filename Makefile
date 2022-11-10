@@ -12,5 +12,13 @@ dev-client:
 
 setup: build-ui build-server
 
+create-migration: 
+	migrate create -dir migrations -ext sql $(name)
+
+migrate:
+	migrate up
+
+
+
 
 
