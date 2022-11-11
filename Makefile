@@ -1,4 +1,6 @@
-databaseURL = postgresql://postgres:Yipyapyop1@127.0.0.5:5432/science?sslmode=disable
+
+databaseName = science
+databaseURL = postgresql://postgres:Yipyapyop1@127.0.0.5:5432/$(databaseName)?sslmode=disable
 migrationsPath = migrations
 
 build-ui:
