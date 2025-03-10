@@ -1,5 +1,5 @@
 
-databaseName = science
+databaseName = app
 databaseURL = postgresql://postgres:Yipyapyop1@127.0.0.5:5432/$(databaseName)?sslmode=disable
 migrationsPath = migrations
 

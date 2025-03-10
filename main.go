@@ -15,14 +15,14 @@ const (
 	port = 5432
 	user = "postgres"
 	password = "Yipyapyop1"
-	dbname = "science"
+	dbname = "app"
 )
 
 func getDBConnection()  (*sql.DB){
 	psqlconn := fmt.Sprintf("host=%s port=%d user=%s password=%s dbname=%s sslmode=disable", host, port, user, password, dbname)
 
 	connection, err := sql.Open("postgres", psqlconn)
-  if err != nil {
+	if err != nil {
 		log.Fatalf("could not connect to db %s", err)
 	}
 
